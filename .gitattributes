@@ -1,16 +1,2 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-<!DOCTYPE html> <!-- HTML type -->
-<html lang="en"> <!-- English language -->
-<head> 
-    <meta charset="UTF-8"> <!-- ensure proper text rendering -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--can be used on any device-->
-    <title>Tutorial 1 COS30045</title> <!-- webpage title -->
-</head>
-<body>
-    <h1>Welcome to COS30045 Tutorial 1</h1> <!-- main heading -->
-    <button>Click Me</button>
-    <img src="https://www.example.com/image.jpg" alt="Example Image" height="100px"> <!-- image with source and alternative text -->
-
-</body>
-</html>
