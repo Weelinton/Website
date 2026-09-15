@@ -1,0 +1,123 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Body layout to push footer down */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #8a0909;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;   /* fix navbar at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    color: #e4d90c;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__item {
+    height: 100px;
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__links:hover {
+    color: #e4d90c;
+    transition: all 0.3s ease-out;
+}
+
+#navbar__logo img {
+    height: 100px;         /* keep height consistent */
+    width: auto;          /* let width adjust naturally */
+    max-width: 100%;      /* prevent overflow */
+    flex-shrink: 0;       /* don’t let flexbox squash it */
+}
+
+
+/* Hero section */
+main {
+    flex: 1; /* pushes footer down */
+    padding-top: 100px; /* prevent overlap with fixed navbar */
+}
+
+.hero {
+    background-color: #0a0a0af0;
+    width: 100%;
+    min-height: calc(100vh - 100px); /* full viewport minus navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__container {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero__title {
+    font-size: 3rem;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.hero__subtitle {
+    font-size: 1.2rem;    
+}
+
+/* Footer section */
+.footer {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
