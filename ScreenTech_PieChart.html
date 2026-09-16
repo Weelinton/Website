@@ -3,8 +3,10 @@
 <head> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Television - COS30045</title>
+  <title>Tutorial 1 COS30045</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="ScreenTech_PieChart.js" defer></script>
 </head>
 
 <body>
@@ -12,7 +14,7 @@
   <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" id="navbar__logo"> 
-        <img src="images/PowerIcon.png" alt="Electricity Logo" height="80px"> COS30045
+        <img src="images/PowerIcon.png" alt="Electricity Logo" height="80px">COS30045
       </a>
       <ul class="navbar__menu">
         <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
@@ -28,14 +30,12 @@
       <div class="hero__container">
         <h1 class="hero__title">Television Energy Consumption</h1>
         <p class="hero__subtitle">Data extracted from the Australian Government</p>
-        <h2>Screen Technologies Currently Available in Australia</h2>
-        <p>
-        <a href="ScreenTech_PieChart.html" target="_blank" class="chart-link">
-          View Interactive Pie Chart
-        </a>
-      </p>
-        </div>
+      </div>
     </section>
+
+    <section class="content">
+      <h2>TV Screen Technologies in Australia</h2>
+      <div id="ScreenTech_PieChart"></div>
     </section>
   </main>
 

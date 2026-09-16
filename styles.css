@@ -111,6 +111,19 @@ main {
     font-size: 1.2rem;    
 }
 
+#ScreenTech_PieChart {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    min-height: 100vh;       /* Takes up the full height of the screen */
+    margin: 0;               /* Removes default browser spacing */
+}
+
+#ScreenTech_PieChart svg {
+  display: block;
+  margin: auto;
+}
+
 /* Footer section */
 .footer {
     background-color: #1A1A1A;
