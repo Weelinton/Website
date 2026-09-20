@@ -1,0 +1,58 @@
+/* Hero section specific to Television page */
+.hero {
+  background-color: #fdfdfdf0;
+  width: 100%;                 /* full width of screen */
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+/* Fact bubble styling */
+.fact-bubble {
+  background-color: #b3b0b0;   /* default bubble color */
+  border-radius: 30px;         /* rounded corners */
+  padding: 30px;               /* space inside bubble */
+  margin: 20px auto;           /* center horizontally */
+  overflow-wrap: break-word;   /* wrap long words */
+  word-wrap: break-word;       /* older browsers */
+}
+
+.fact-header h2{
+    color:black;
+    font-size: 1.2rem;
+}
+
+.fact-bubble li{
+    font-size:1.2rem;
+}
+.fact-bubble p{
+    color:black;
+    padding: 5px;
+    font-size:1.2rem;
+}
+
+.hero__container h3{
+    color: black;
+}
+
+.hero__container h4{
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hero__container p{
+    color: black;
+    padding-top:20px;
+    padding-bottom: 50px;
+}
+
+img {
+    height: 250px;         /* keep height consistent */
+    width: auto;          /* let width adjust naturally */
+    max-width: 100%;      /* prevent overflow */
+    flex-shrink: 0;       /* don’t let flexbox squash it */
+}

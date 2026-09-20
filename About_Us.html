@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial 1 COS30045</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Television - COS30045</title>
+  <!-- Global styles for all pages -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="television.css">
 </head>
 
-<body>
-    <!-- Navigation bar -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" id="navbar__logo"> 
-                <img src="images/PowerIcon.png" alt="Electricity Logo" height="80px">COS30045
-            </a>
-            <ul class="navbar__menu">
-                <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
-                <li class="navbar__item"><a href="Television.html" class="navbar__links">Television</a></li>
-                <li class="navbar__item"><a href="About_Us.html" class="navbar__links">About Us</a></li>
-            </ul>
+<body class="television-page">
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo"> 
+        <img src="images/PowerIcon.png" alt="Electricity Logo">
+      </a>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="Television.html" class="navbar__links active">Television</a></li>
+        <li class="navbar__item"><a href="About_Us.html" class="navbar__links">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main> 
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">About This Site</h1>
+            <p>This educational website demonstrates basic web development and shares simple pointers on appliance energy consumption in Australia.</p>
         </div>
-    </nav>
+        <div class="fact-bubble">
+            <h2>Credits</h2>
+            <p>Created by Weelinton ANAK JULIET PANJAI.</p>
+            <p>GenAI tools were used to help draft starter code and placeholder text.</p>
+        </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">

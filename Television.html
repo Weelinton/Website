@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Television - COS30045</title>
+  <!-- Global styles for all pages -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="television.css">
 </head>
 
-<body>
+<body class="television-page">
   <!-- Navigation bar -->
   <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" id="navbar__logo"> 
-        <img src="images/PowerIcon.png" alt="Electricity Logo" height="80px"> COS30045
+        <img src="images/PowerIcon.png" alt="Electricity Logo">
       </a>
       <ul class="navbar__menu">
         <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
@@ -23,19 +26,58 @@
   </nav>
 
   <!-- Main content -->
-  <main>
+  <main> 
     <section class="hero">
       <div class="hero__container">
-        <h1 class="hero__title">Television Energy Consumption</h1>
-        <p class="hero__subtitle">Data extracted from the Australian Government</p>
-        <h2>Screen Technologies Currently Available in Australia</h2>
-        <p>
-        <a href="ScreenTech_PieChart.html" target="_blank" class="chart-link">
-          View Interactive Pie Chart
-        </a>
-      </p>
+        <h1 class="hero__title">Television Energy Tips</h1>
+
+        <!-- Fact bubble -->
+        <div class="fact-bubble">
+
+          <div class="fact-header">
+            <h2><b>Size & technology matter.</b> Larger screens and older tech (e.g., plasma) use more energy. Modern LED/LCD and OLED sets are generally more efficient.
+            </h2>
+
+          </div>
+          <ul>
+            <li>Use the TV’s Energy Saver or Eco mode and reduce brightness where comfortable.</li>
+            <li>Disable “always-listening” voice features if you don’t use them; they can add standby draw.</li>
+            <li>Consider star rating and annual kWh on the energy label when purchasing.</li>
+          </ul>
+
+          <p><i>Placeholder note</i>: Insert simple examples of annual kWh for common TV sizes in Australia to make this page concrete.</p>
         </div>
-    </section>
+        <h3><b>TV Energy Insights: Data Story</b></h2>
+        </b></h3>
+        <p>This section presents findings from the Australian Government’s Television Energy Rating dataset. The aim is to help Australian consumers make informed decisions about technology, size, brand, and efficiency.
+        </p>
+
+        <h4><b>Chart 1: What TV technologies are most common?</b></h4>
+        <img src="images\Q1 (pie chart).png" alt="Q1P"> 
+        <img src="images\Q1 (bar chart).png" alt="Q1B"> 
+        <p>Most TVs in Australia are LCD LED, while OLED is less common.</p>
+
+        <h4><b>Chart 2: What screen sizes are most frequent?</b></h4>
+        <img src="images\Q2.png" alt="Q2"> 
+        <p>55-inch TVs are the most common, followed by mid-range sizes like 42–50 inches.</p>
+
+        <h4><b>Chart 3: Which brands dominate the market?</b></h4>
+        <img src="images\Q3.png" alt="Q3"> 
+        <p>Samsung, Sony, and Hisense have the largest number of models on the Australian market.</p>
+
+        <h4><b>Chart 4: Which screen type uses the least power?</b></h4>
+        <img src="images\Q4.png" alt="Q4"> 
+        <p>LCD TVs consume the least power, while OLEDs use slightly more but offer higher performance.</p>
+
+        <h4><b>Chart 5: What is the relationship between screen size and power use?</b></h4>
+        <img src="images\Q5.png" alt="Q5">         
+        <p>Larger TVs use more power — the relationship is clearly positive.</p>
+        <h4><b>Chart 6: What is the relationship between star rating and screen size?</b></h4>  
+        <img src="images\Q6.png" alt="Q6"> 
+        <p>Star ratings are fairly distributed across all sizes; bigger TVs can still be efficient if well designed.</p>      
+        <h4><b>Conclusion</b></h4>
+        <p>When choosing a TV, balance size, brand, and efficiency. A 55-inch LED TV is common and energy-smart for most households.</p>
+      </div>  
     </section>
   </main>
 
