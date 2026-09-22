@@ -1,58 +1,64 @@
 /* Hero section specific to Television page */
 .hero {
-  background-color: #fdfdfdf0;
-  width: 100%;                 /* full width of screen */
-  min-height: calc(100vh - 100px);
+  background-color: #fdfdfdf0;   /* light background with transparency */
+  width: 100%;                  /* full width of screen */
+  min-height: calc(100vh - 100px); /* viewport height minus navbar */
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 20px;
+  flex-direction: column;       /* stack content vertically */
+  align-items: flex-start;      /* align to left */
+  justify-content: flex-start;  /* push content to top */
+  padding: 20px;                /* spacing inside hero */
 }
 
 /* Fact bubble styling */
 .fact-bubble {
-  background-color: #b3b0b0;   /* default bubble color */
-  border-radius: 30px;         /* rounded corners */
-  padding: 30px;               /* space inside bubble */
-  margin: 20px auto;           /* center horizontally */
-  overflow-wrap: break-word;   /* wrap long words */
-  word-wrap: break-word;       /* older browsers */
+  background-color: #b3b0b0;    /* default bubble color */
+  border-radius: 30px;          /* rounded corners */
+  padding: 30px;                /* space inside bubble */
+  margin: 20px auto;            /* center horizontally */
+  overflow-wrap: break-word;    /* wrap long words */
+  word-wrap: break-word;        /* legacy support */
 }
 
-.fact-header h2{
-    color:black;
-    font-size: 1.2rem;
+/* Fact bubble header */
+.fact-header h2 {
+  color: black;
+  font-size: 1.2rem;
 }
 
-.fact-bubble li{
-    font-size:1.2rem;
-}
-.fact-bubble p{
-    color:black;
-    padding: 5px;
-    font-size:1.2rem;
+/* Fact bubble list items */
+.fact-bubble li {
+  font-size: 1.2rem;
 }
 
-.hero__container h3{
-    color: black;
+/* Fact bubble paragraphs */
+.fact-bubble p {
+  color: black;
+  padding: 5px;
+  font-size: 1.2rem;
 }
 
-.hero__container h4{
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+/* Hero container headings */
+.hero__container h3 {
+  color: black;
 }
 
-.hero__container p{
-    color: black;
-    padding-top:20px;
-    padding-bottom: 50px;
+.hero__container h4 {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
+/* Hero container paragraphs */
+.hero__container p {
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+/* Image styling */
 img {
-    height: 250px;         /* keep height consistent */
-    width: auto;          /* let width adjust naturally */
-    max-width: 100%;      /* prevent overflow */
-    flex-shrink: 0;       /* don’t let flexbox squash it */
+  height: auto;        /* maintain aspect ratio */
+  width: 1100px;       /* fixed width */
+  max-width: 100%;     /* prevent overflow */
 }
