@@ -89,19 +89,26 @@ main {
 }
 
 .hero {
-    background-color: #fdfdfdf0; /* corrected hex value */
-    width: 100%;
-    min-height: calc(100vh - 100px); /* full viewport minus navbar */
-    display: flex;
-    flex-direction: column; /* stack vertically */
-    align-items: center;
-    justify-content: center;
+  background-color: #fdfdfdf0;   /* light background */
+  width: 100%;
+  min-height: calc(100vh - 100px); /* full viewport minus navbar */
+  display: flex;
+  flex-direction: column;       /* stack text + bubble vertically */
+  align-items: center;          /* center horizontally */
+  justify-content: center;      /* center vertically */
+  padding: 20px;
+  text-align: center;           /* center text inside */
 }
 
+
+
+/* Hero container (text block) */
 .hero__container {
-    text-align: left;
-    color: #fff;
-    padding: 20px;
+  color: black;                 /* text color */
+  padding: 20px;
+  max-width: 100%;             /* keep text narrow for readability */
+  text-align: center;           /* center headings/paragraphs */
+  width:100%
 }
 
 .hero__title {
@@ -114,18 +121,36 @@ main {
     font-size: 1.2rem;    
 }
 
-/* Fact bubble */
+/* Homepage fact bubble */
 .fact-bubble {
-    background-color: #b3b0b0;   /* default bubble color */
-    border-radius: 30px;         /* rounded corners */
-    padding: 20px;               /* space inside bubble */
-    margin: 20px auto;           /* center horizontally */
+  background-color: #b3b0b0;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px auto;        /* auto margins center the box */
+  max-width: 800px;         /* control width */
+  width: 100%;              /* stretch but respect max-width */
+  text-align: left;         /* keep list text aligned left */
 }
+
+
+/* About Us fact bubble */
+.about-us .fact-bubble {
+
+  background-color: #b3b0b0;    /* bubble color */
+  border-radius: 30px;          /* rounded corners */
+  padding: 20px;                /* space inside bubble */
+  margin-top: 20px;             /* spacing below text */
+  max-width: 800px;             /* match text width */
+  width: 100%;                  /* bubble stretches but respects max-width */
+  text-align: center;             /* keep list text aligned left */
+}
+
 
 .fact-bubble h2 {
     margin-bottom: 10px;
     color: black;                /* header color */
     font-size: 1.5rem;           /* header size */
+    text-align: center;
 }
 
 .fact-bubble ul {
@@ -140,7 +165,8 @@ main {
     color: black;                /* dot color */
     font-weight: bold;
     display: inline-block;
-    width: 1.2em;                /* spacing */
+    width: 1.5em;                /* spacing */
+    padding: 5px;
 }
 
 /* Footer section */
