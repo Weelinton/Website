@@ -133,18 +133,6 @@ main {
 }
 
 
-/* About Us fact bubble */
-.about-us .fact-bubble {
-
-  background-color: #b3b0b0;    /* bubble color */
-  border-radius: 30px;          /* rounded corners */
-  padding: 20px;                /* space inside bubble */
-  margin-top: 20px;             /* spacing below text */
-  max-width: 800px;             /* match text width */
-  width: 100%;                  /* bubble stretches but respects max-width */
-  text-align: center;             /* keep list text aligned left */
-}
-
 
 .fact-bubble h2 {
     margin-bottom: 10px;
