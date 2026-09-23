@@ -93,6 +93,7 @@ main {
     width: 100%;
     min-height: calc(100vh - 100px); /* full viewport minus navbar */
     display: flex;
+    flex-direction: column; /* stack vertically */
     align-items: center;
     justify-content: center;
 }
