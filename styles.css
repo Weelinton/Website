@@ -3,30 +3,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-/* Body layout to push footer down */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: sans-serif;
 }
 
 /* Navbar */
 .navbar {
     background-color: #8a0909;
     height: 100px;
-    display: flex;
-    justify-content: center;
+    display: flex; 
     align-items: center;
-    font-size: 1.2rem;
     position: fixed;   /* fix navbar at top */
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 999; /*navigation bar always in front of the content*/
 }
 
 .navbar__container {
@@ -34,15 +22,12 @@ body {
     justify-content: flex-start; /* push content to the left */
     align-items: center;
     width: 100%;
-    padding: 0 20px; /* smaller padding */
 }
 
 #navbar__logo {
     color: #e4d90c;
     display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
+    cursor: pointer; /*change pointer to clickable hand signal*/
 }
 
 #navbar__logo img {
@@ -55,66 +40,65 @@ body {
 .navbar__menu {
     display: flex;
     align-items: center;
-    list-style: none;
+    list-style: none;     /*remove bullet points*/
 }
 
 .navbar__item {
     height: 100px;        /* same as navbar height */
     display: flex;
     align-items: center;  /* center link vertically */
+    margin: 0 5px;        /*gap between navbar items*/
 }
 
 .navbar__links {
     color: #fff;
     display: flex;
     align-items: center;
-    text-decoration: none;
-    padding: 6px 14px;       /* smaller padding = shorter bubble */
+    text-decoration: none;   /*remove bullet points*/
+    padding: 6px 20px;       /* smaller padding = shorter bubble (roundness, bubble width) */
     border-radius: 20px;     /* rounded bubble */
     background-color: transparent;
     transition: all 0.3s ease;
-    line-height: 1.2;        /* controls text height */
     font-size: 1.3rem;   
 }
 
 .navbar__links:hover {
     background-color: #e4d90c;
-    color: #000;
+    color: #000;  /*colour of hovered text*/
 }
 
 /* Hero section */
 main {
-    flex: 1; /* pushes footer down */
-    padding-top: 100px; /* prevent overlap with fixed navbar */
+    padding-top: 80px; /* prevent overlap with fixed navbar */
 }
 
 .hero {
-  background-color: #fdfdfdf0;   /* light background */
-  width: 100%;
-  min-height: calc(100vh - 100px); /* full viewport minus navbar */
-  display: flex;
-  flex-direction: column;       /* stack text + bubble vertically */
-  align-items: center;          /* center horizontally */
-  justify-content: center;      /* center vertically */
-  padding: 20px;
-  text-align: center;           /* center text inside */
+    background-color: #fdfdfdf0;   /* light background */
+    width: 100%;
+    min-height: calc(100vh - 100px); /* full viewport minus navbar */
+    display: flex;
+    flex-direction: column;       /* stack text + bubble vertically */
+    align-items: center;          /* center horizontally */
+    justify-content: center;      /* center vertically */
+    padding: 20px;
+    text-align: center;           /* center text inside */
 }
 
 
 
 /* Hero container (text block) */
 .hero__container {
-  color: black;                 /* text color */
-  padding: 20px;
-  max-width: 100%;             /* keep text narrow for readability */
-  text-align: center;           /* center headings/paragraphs */
-  width:100%
+    color: black;                 /* text color */
+    padding: 20px;                  /*how much distance from the top of page*/
+    max-width: 100%;             
+    text-align: center;           /* center headings/paragraphs */
+    width:100%
 }
 
 .hero__title {
     font-size: 3rem;
     color: black;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .hero__subtitle {
@@ -161,7 +145,7 @@ main {
 .footer {
     background-color: #1A1A1A;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px ;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -5,8 +5,6 @@
   min-height: calc(100vh - 100px); /* viewport height minus navbar */
   display: flex;
   flex-direction: column;       /* stack content vertically */
-  align-items: flex-start;      /* align to left */
-  justify-content: flex-start;  /* push content to top */
   padding: 20px;                /* spacing inside hero */
 }
 
@@ -20,10 +18,23 @@
   word-wrap: break-word;        /* legacy support */
 }
 
-/* Fact bubble header */
-.fact-header h2 {
+/*title */
+.hero__container h1 {
   color: black;
-  font-size: 1.2rem;
+  font-size: 3rem;
+}
+
+/* Hero container paragraphs */
+.hero__container p {
+  color: black;
+  padding-top: 20px;
+}
+
+
+/* Fact bubble header */
+.fact-bubble h2 {
+  color: black;
+  font-size: 2rem;
 }
 
 /* Fact bubble paragraphs */
@@ -34,10 +45,5 @@
   text-align: center;
 }
 
-/* Hero container paragraphs */
-.hero__container p {
-  color: black;
-  padding-top: 20px;
-}
 
 
