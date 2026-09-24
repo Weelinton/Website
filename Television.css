@@ -64,15 +64,3 @@ img {
   width: 80%;       /* fixed width */
   max-width: 100%;     /* prevent overflow */
 }
-
-/* Footer section */
-.footer {
-    background-color: #1A1A1A;
-    color: #fff;
-    padding: 10px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-}
-
