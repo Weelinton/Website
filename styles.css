@@ -55,8 +55,8 @@
     color: #fff;
     display: flex;
     align-items: center;
-    text-decoration: none;   /*remove bullet points*/
-    padding: 6px 20px;       /* smaller padding = shorter bubble (roundness, bubble width) */
+    text-decoration: none;   /*remove underline*/
+    padding: 6px 20px;       /* bubble size */
     border-radius: 20px;     /* rounded bubble */
     background-color: transparent;
     transition: all 0.3s ease;
@@ -85,14 +85,12 @@ main {
     text-align: center;           /* center text inside */
 }
 
-
-
 /* Hero container (text block) */
 .hero__container {
-    color: black;                 /* text color */
-    padding: 20px;                  /*how much distance from the top of page*/
+    color: black;                 
+    padding: 20px;                
     max-width: 100%;             
-    text-align: center;           /* center headings/paragraphs */
+    text-align: center;           
     width:100%
 }
 
@@ -111,34 +109,32 @@ main {
   background-color: #b3b0b0;
   border-radius: 30px;
   padding: 20px;
-  margin: 20px auto;        /* auto margins center the box */
-  max-width: 800px;         /* control width */
-  width: 100%;              /* stretch but respect max-width */
-  text-align: left;         /* keep list text aligned left */
+  margin: 20px auto;        
+  max-width: 800px;         
+  width: 100%;              
+  text-align: left;         
 }
-
-
 
 .fact-bubble h2 {
     margin-bottom: 10px;
-    color: black;                /* header color */
-    font-size: 1.5rem;           /* header size */
+    color: black;                
+    font-size: 1.5rem;           
     text-align: center;
 }
 
 .fact-bubble ul {
-    list-style: none;            /* remove default bullets */
+    list-style: none;            
     padding-left: 0;
     color: black;
     font-size: 1.2rem;
 }
 
 .fact-bubble li::before {
-    content: "•";                /* custom dot */
-    color: black;                /* dot color */
+    content: "•";                
+    color: black;                
     font-weight: bold;
     display: inline-block;
-    width: 1.5em;                /* spacing */
+    width: 1.5em;                
     padding: 5px;
 }
 

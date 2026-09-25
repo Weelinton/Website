@@ -55,12 +55,11 @@
   padding-bottom: 50px;
   max-width: 50%;     /* restrict width to half the screen */
   margin: 0 auto;     /* center horizontally */
-
 }
 
 /* Image styling */
 img {
   height: auto;        /* maintain aspect ratio */
-  width: 80%;       /* fixed width */
+  width: 80%;          /* scale images */
   max-width: 100%;     /* prevent overflow */
 }

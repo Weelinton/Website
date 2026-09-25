@@ -18,7 +18,7 @@
   word-wrap: break-word;        /* legacy support */
 }
 
-/*title */
+/* Title */
 .hero__container h1 {
   color: black;
   font-size: 3rem;
@@ -29,7 +29,6 @@
   color: black;
   padding-top: 20px;
 }
-
 
 /* Fact bubble header */
 .fact-bubble h2 {
@@ -44,6 +43,3 @@
   font-size: 1.2rem;
   text-align: center;
 }
-
-
-
