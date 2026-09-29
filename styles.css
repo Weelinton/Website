@@ -147,4 +147,9 @@ main {
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
